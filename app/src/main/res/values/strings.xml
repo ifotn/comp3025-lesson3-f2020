@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">F20Lesson3</string>
+    <string name="enter_amount">Enter Bill Amount</string>
+    <string name="tip">Tip</string>
+    <string name="total">Total</string>
+</resources>
