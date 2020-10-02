@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="input_width">250dp</dimen>
+    <dimen name="label_size">18sp</dimen>
+    <dimen name="default_padding">10dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 </resources>

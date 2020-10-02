@@ -16,7 +16,8 @@
         android:textAlignment="textEnd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/seekBar" />
+        app:layout_constraintBottom_toTopOf="@id/seekBar"
+        android:padding="@dimen/default_padding" />
 
     <SeekBar
         android:id="@+id/seekBar"
@@ -28,7 +29,19 @@
         android:min="10"
         android:max="20"
         android:progress="15"
+        android:padding="@dimen/default_padding"
         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewTipPercent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seekBar"
+        android:textSize="@dimen/label_size"
+        android:padding="@dimen/default_padding"
+        android:text="@string/tip_percent" />
 
     <TextView
         android:id="@+id/textViewTip"
@@ -36,14 +49,17 @@
         android:layout_height="wrap_content"
         android:text="@string/tip"
         app:layout_constraintStart_toStartOf="@id/editTextAmount"
-        app:layout_constraintTop_toBottomOf="@id/seekBar"/>
+        app:layout_constraintTop_toBottomOf="@id/textViewTipPercent"
+        android:padding="@dimen/default_padding"
+        android:textSize="@dimen/label_size"/>
 
     <TextView
         android:id="@+id/textViewTipAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="@id/editTextAmount"
-        app:layout_constraintTop_toBottomOf="@id/seekBar"/>
+        app:layout_constraintTop_toBottomOf="@id/textViewTipPercent"
+        android:padding="@dimen/default_padding" />
 
     <TextView
         android:id="@+id/textViewTotal"
@@ -51,13 +67,16 @@
         android:layout_height="wrap_content"
         android:text="@string/total"
         app:layout_constraintStart_toStartOf="@id/editTextAmount"
-        app:layout_constraintTop_toBottomOf="@id/textViewTip" />
+        app:layout_constraintTop_toBottomOf="@id/textViewTip"
+        android:padding="@dimen/default_padding"
+        android:textSize="@dimen/label_size" />
 
     <TextView
         android:id="@+id/textViewTotalAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="@id/editTextAmount"
-        app:layout_constraintTop_toBottomOf="@id/seekBar" />
+        app:layout_constraintTop_toBottomOf="@id/textViewTipAmount"
+        android:padding="@dimen/default_padding" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
